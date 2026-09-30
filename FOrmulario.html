@@ -1,85 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>AgendaWeb - Nuevo Evento</title>
-  
-  <!-- Carga de fuentes de Google Fonts -->
+
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
-  
-  <!-- Hoja de estilos -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/Estilos.css">
 </head>
+
 <body>
 
   <main class="app-container">
+
     <section class="card-form">
+
       <header class="card-header">
-        <h1 class="form-title">Programar nuevo evento</h1>
-        <p class="form-subtitle">Ingresa los detalles para registrar la cita en tu agenda.</p>
+
+        <h1 class="form-title">
+          Programar nuevo evento
+        </h1>
+
+        <p class="form-subtitle">
+          Ingresa los detalles para registrar la cita en tu agenda.
+        </p>
+
       </header>
 
-      <form class="event-form" action="#" method="POST" onsubmit="event.preventDefault();">
-        
-        <!-- Título del evento -->
+
+      <form class="event-form" action="#" method="post">
+
+        <!-- Título -->
+
         <div class="form-group">
-          <label for="event-title" class="form-label">Título del evento</label>
-          <input 
-            type="text" 
-            id="event-title" 
-            class="form-control" 
-            placeholder="Ej. Reunión de seguimiento de proyecto" 
-            required 
-          />
+
+          <label for="event-title" class="form-label">
+            Título del evento
+          </label>
+
+          <input
+            type="text"
+            id="event-title"
+            name="event-title"
+            class="form-control"
+            placeholder="Ej. Reunión de seguimiento de proyecto"
+            required
+          >
+
         </div>
 
-        <!-- Fila doble: Fecha y Hora -->
+
+        <!-- Fecha y hora -->
+
         <div class="form-row">
-          <div class="form-group">
-            <label for="event-date" class="form-label">Fecha</label>
-            <input type="date" id="event-date" class="form-control" required />
-          </div>
 
           <div class="form-group">
-            <label for="event-time" class="form-label">Hora de inicio</label>
-            <input type="time" id="event-time" class="form-control" required />
+
+            <label for="event-date" class="form-label">
+              Fecha
+            </label>
+
+            <input
+              type="date"
+              id="event-date"
+              name="event-date"
+              class="form-control"
+              required
+            >
+
           </div>
+
+
+          <div class="form-group">
+
+            <label for="event-time" class="form-label">
+              Hora de inicio
+            </label>
+
+            <input
+              type="time"
+              id="event-time"
+              name="event-time"
+              class="form-control"
+              required
+            >
+
+          </div>
+
         </div>
 
-        <!-- Categoría del evento -->
+
+        <!-- Categoría -->
+
         <div class="form-group">
-          <label for="event-category" class="form-label">Categoría</label>
-          <select id="event-category" class="form-control">
-            <option value="trabajo">Trabajo / Negocios</option>
-            <option value="personal">Personal / Salud</option>
-            <option value="estudios">Estudios / Cursos</option>
-            <option value="otro">Otro</option>
+
+          <label for="event-category" class="form-label">
+            Categoría
+          </label>
+
+          <select
+            id="event-category"
+            name="event-category"
+            class="form-control"
+          >
+
+            <option value="trabajo">
+              Trabajo / Negocios
+            </option>
+
+            <option value="personal">
+              Personal / Salud
+            </option>
+
+            <option value="estudios">
+              Estudios / Cursos
+            </option>
+
+            <option value="otro">
+              Otro
+            </option>
+
           </select>
+
         </div>
 
-        <!-- Notas / Descripción -->
+
+        <!-- Notas -->
+
         <div class="form-group">
-          <label for="event-notes" class="form-label">Notas adicionales <span class="optional">(Opcional)</span></label>
-          <textarea 
-            id="event-notes" 
-            class="form-control textarea" 
-            rows="3" 
+
+          <label for="event-notes" class="form-label">
+
+            Notas adicionales
+
+            <span class="optional">
+              (Opcional)
+            </span>
+
+          </label>
+
+          <textarea
+            id="event-notes"
+            name="event-notes"
+            class="form-control textarea"
+            rows="3"
             placeholder="Añade una descripción o enlace a la reunión..."
           ></textarea>
+
         </div>
 
-        <!-- Acciones del formulario -->
+
+        <!-- Botones -->
+
         <div class="form-actions">
-          <button type="button" class="btn btn-secondary">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar evento</button>
+
+          <button
+            type="reset"
+            class="btn btn-secondary"
+          >
+            Cancelar
+          </button>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Guardar evento
+          </button>
+
         </div>
 
       </form>
+
     </section>
+
   </main>
 
 </body>
+
 </html>
