@@ -5,16 +5,16 @@
 
 :root {
   /* Colores */
-  --color-fondo: #F4F8FC;
-  --color-superficie: #FFFFFF;
-  --color-texto-principal: #172B4D;
-  --color-texto-secundario: #52657A;
-  --color-acento: #155EEF;
-  --color-borde: #C9D5E3;
+   color-fondo: #F4F8FC;
+   color-superficie: #FFFFFF;
+   color-texto-principal: #172B4D;
+   color-texto-secundario: #52657A;
+   color-acento: #155EEF;
+   color-borde: #C9D5E3;
 
   /* Tipografías */
-  --fuente-titulos: "Space Grotesk", sans-serif;
-  --fuente-cuerpo: "Inter", sans-serif;
+   fuente-titulos: "Space Grotesk", sans-serif;
+   fuente-cuerpo: "Inter", sans-serif;
 }
 
 
